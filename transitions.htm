@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: orange;
+        }
+        .container{
+            height: 500px;
+            width: 500px;
+            border: 1px solid;
+            text-align: center;
+            background-color: green;
+        }
+        button{
+            background-color: black;
+            color: aqua;
+            margin: 80px 20px;
+            font-size: 20px;
+            box-shadow: 10px 10px 10px gray;
+        }
+        .container>.item1:hover~img{
+            background-color:#13e1e8;
+            border-radius: 40px;
+            transform: translate(50px,50px);
+            transition: all 3s;
+        }
+        .container>.item2:hover~img{
+           
+            transform:rotate(1000deg);
+            transition: all 3s;
+        }
+        .container>.item3:hover~img{
+            background-color:#622c91;
+            border-radius: 40px;
+            transform:scale(1.5,1.5);
+            transition: all 3s;
+        }
+        .container>.item4:hover~img{
+            background-color:#1313e8;
+            border-radius: 40px;
+            transform:skew(180deg , 10deg);
+            transition: all 3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="item1">Translate</button>
+        <button class="item2">Rotate</button>
+        <button class="item3">Scale</button>
+        <button class="item4">Skew</button>
+        <img src="https://www.pngall.com/wp-content/uploads/9/Star-PNG-Pic.png" alt="img not found" width="100px" style="padding: 10px;">
+    </div>
+</body>
+</html>
